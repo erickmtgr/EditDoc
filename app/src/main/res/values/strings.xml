@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EditDoc</string>
+    <string name="text_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis enim et magna varius interdum. Praesent suscipit, arcu in ornare tempus, ligula nibh dapibus ligula, id eleifend sapien risus et nisi. Cras pulvinar cursus quam sed sagittis. Proin consequat mi at erat ornare sollicitudin. Vivamus blandit placerat malesuada. Ut sed finibus orci.</string>
+    <string name="title_text">Edit your text</string>
+    <string name="title_activity_edit_text">EditTextActivity</string>
+    <string name="item_edit_title">Edita Título</string>
+    <string name="item_edit_text">Edita texto</string>
+    <string name="edit_title_label">Edita aquí el itulo</string>
+</resources>
