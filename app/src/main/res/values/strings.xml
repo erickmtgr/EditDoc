@@ -5,5 +5,5 @@
     <string name="title_activity_edit_text">EditTextActivity</string>
     <string name="item_edit_title">Edita Título</string>
     <string name="item_edit_text">Edita texto</string>
-    <string name="edit_title_label">Edita aquí el itulo</string>
+    <string name="edit_title_label">Edita aquí el título</string>
 </resources>

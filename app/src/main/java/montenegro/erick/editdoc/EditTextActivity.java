@@ -13,7 +13,7 @@ public class EditTextActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_title);
+        setContentView(R.layout.activity_edit_content);
 
         edit_text = (TextView) findViewById(R.id.edit_text);
 
