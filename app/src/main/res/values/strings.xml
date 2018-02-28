@@ -6,4 +6,5 @@
     <string name="item_edit_title">Edita Título</string>
     <string name="item_edit_text">Edita texto</string>
     <string name="edit_title_label">Edita este título</string>
+    <string name="text_btn">Save</string>
 </resources>
