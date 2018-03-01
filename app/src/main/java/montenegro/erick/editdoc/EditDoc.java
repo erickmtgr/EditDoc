@@ -17,6 +17,8 @@ public class EditDoc extends AppCompatActivity {
 
     private TextView title_label;
     private TextView text_label;
+    private static final int EDIT_BODY = 1;
+    private static final int EDIT_TITLE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +43,13 @@ public class EditDoc extends AppCompatActivity {
             case R.id.item_edit_title: {
                 Intent intent = new Intent(this, EditTextActivity.class);
                 intent.putExtra("text", title_label.getText().toString());
-                startActivityForResult(intent, 0);
+                startActivityForResult(intent, EDIT_TITLE);
                 break;
             }
             case R.id.item_edit_text: {
                 Intent intent = new Intent(this, EditTextActivity.class);
                 intent.putExtra("text", text_label.getText().toString());
-                startActivityForResult(intent, 1);
+                startActivityForResult(intent, EDIT_BODY);
                 break;
             }
         }
@@ -57,13 +59,14 @@ public class EditDoc extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
-            case R.id.item_edit_title:
-
-
+            case EDIT_TITLE:
+                String title = data.getStringExtra("text");
+                title_label.setText(title);
                 break;
 
-            case R.id.item_edit_text:
-
+            case EDIT_BODY:
+                String text = data.getStringExtra("text");
+                text_label.setText(text);
                 break;
 
         }
