@@ -17,7 +17,6 @@ public class EditDoc extends AppCompatActivity {
 
     private TextView title_label;
     private TextView text_label;
-    private Button btn_save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +25,7 @@ public class EditDoc extends AppCompatActivity {
 
         title_label = (TextView) findViewById(R.id.title_label);
         text_label = (TextView) findViewById(R.id.text_label);
-        btn_save = (Button) findViewById(R.id.btn_save);
-        btn_save.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // your handler code here
-            }
-        });
+
     }
 
     @Override
